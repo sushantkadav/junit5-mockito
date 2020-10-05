@@ -1,0 +1,21 @@
+# --------------- SERVER CONFIGS ---------------
+
+# --------------- SPRING BOOT CONFIGS ---------------
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/avenues_dev?useSSL=false
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        database: MySQL
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        type: DEBUG
+server:
+  port: 8282
